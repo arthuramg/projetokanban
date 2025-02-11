@@ -13,7 +13,7 @@ Este projeto é uma aplicação web de Kanban projetada para facilitar a organiz
 ## 🛠️ Tecnologias Utilizadas
 - **Frontend:** React, TypeScript
 - **Backend:** Node.js, Express (opcional para armazenamento de dados)
-- **Estilização:** Tailwind CSS
+- **Estilização:** Radix-Ui
 - **Banco de Dados:** MongoDB (opcional)
 - **Outras Bibliotecas:**
   - React DnD para drag and drop
