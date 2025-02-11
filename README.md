@@ -1,50 +1,95 @@
-# React + TypeScript + Vite
+# Kanban Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Descrição
+Este projeto é uma aplicação web de Kanban projetada para facilitar a organização de tarefas, fluxos de trabalho e projetos. Inspirado na metodologia ágil, permite que os usuários visualizem o progresso das atividades em colunas personalizadas.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
+- **Gerenciamento de Tarefas:** Adicione, edite e exclua tarefas facilmente.
+- **Colunas Personalizáveis:** Configure diferentes status de tarefas (ex.: "A Fazer", "Em Andamento", "Concluído").
+- **Drag and Drop:** Mova tarefas entre colunas de maneira intuitiva.
+- **Persistência de Dados:** Salve informações localmente ou via API (se configurada).
+- **Filtros e Busca:** Encontre rapidamente tarefas específicas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologias Utilizadas
+- **Frontend:** React, TypeScript
+- **Backend:** Node.js, Express (opcional para armazenamento de dados)
+- **Estilização:** Tailwind CSS
+- **Banco de Dados:** MongoDB (opcional)
+- **Outras Bibliotecas:**
+  - React DnD para drag and drop
+  - Axios para requisições HTTP
 
-## Expanding the ESLint configuration
+## 📦 Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/kanban-project.git
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd kanban-project
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+4. Inicie a aplicação:
+   ```bash
+   npm start
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+5. Acesse a aplicação em `http://localhost:3000`.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🌐 Backend (Opcional)
+1. Navegue até a pasta `backend`:
+   ```bash
+   cd backend
+   ```
+
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor:
+   ```bash
+   npm start
+   ```
+
+4. Configure o `.env` para definir a URL do banco de dados.
+
+## 🚧 Melhorias Futuras
+- Integração com autenticação de usuários
+- Notificações por email
+- Visualizações personalizadas
+- Modo escuro
+
+## 🤝 Contribuição
+1. Faça um fork do projeto.
+2. Crie uma branch para a sua feature:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Commit suas mudanças:
+   ```bash
+   git commit -m 'Minha nova feature'
+   ```
+4. Envie para a branch principal:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request.
+
+## 📄 Licença
+Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+
+## 👨‍💻 Autor
+Desenvolvido por [Seu Nome](https://github.com/seu-usuario). Fique à vontade para entrar em contato!
+
+---
+
+Espero que isso ajude você com o seu projeto de Kanban! 🚀
+
